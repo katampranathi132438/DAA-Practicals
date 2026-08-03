@@ -1,1 +1,0 @@
-I successfully implemented the Insertion Sort algorithm in Python and sorted the given array in ascending order. Through this practical, I understood how Insertion Sort works by inserting each element into its correct position in the sorted part of the array.
