@@ -1,20 +1,25 @@
-def binary_search(arr, key):
-    low = 0
-    high = len(arr) - 1
-    while low <= high:
-        mid = (low + high) // 2
-        if arr[mid] == key:
-            return mid
-        elif arr[mid] < key:
-            low = mid + 1
-        else:
-            high = mid - 1
-    return -1
-arr = [10, 20, 30, 40, 50]
-key = 40
 
-result = binary_search(arr, key)
-if result == -1:
-    print("Element not found")
+n = int(input("Enter the number of elements: "))
+
+arr = []
+print("Enter the elements in sorted order:")
+for i in range(n):
+    arr.append(int(input()))
+
+key = int(input("Enter the element to search: "))
+
+low = 0
+high = n - 1
+
+while low <= high:
+    mid = (low + high) // 2
+
+    if arr[mid] == key:
+        print("Element found at position", mid + 1)
+        break
+    elif arr[mid] < key:
+        low = mid + 1
+    else:
+        high = mid - 1
 else:
-    print("Element found at index", result)
+    print("Element not found")
