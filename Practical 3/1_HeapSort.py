@@ -1,7 +1,7 @@
 def heapify(arr, n, i):
-    largest = i       
-    left = 2 * i + 1     
-    right = 2 * i + 2    
+    largest = i
+    left = 2 * i + 1
+    right = 2 * i + 2
     if left < n and arr[left] > arr[largest]:
         largest = left
     if right < n and arr[right] > arr[largest]:
@@ -15,7 +15,8 @@ def heap_sort(arr):
         heapify(arr, n, i)
     for i in range(n - 1, 0, -1):
         arr[0], arr[i] = arr[i], arr[0]
-        heapify(arr, i,0)
-arr = [12, 3, 19, 5, 7, 13]
+        heapify(arr, i, 0)
+n = int(input("Enter number of elements: "))
+arr = list(map(int, input("Enter elements separated by spaces: ").split()))
 heap_sort(arr)
 print("Sorted array:", arr)
