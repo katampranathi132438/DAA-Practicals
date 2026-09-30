@@ -1,0 +1,2 @@
+DFS is a graph traversal algorithm that explores a graph deeply before backtracking. It uses recursion (stack) and a visited array. For an adjacency-list representation,
+ its time complexity is O(V + E) and its auxiliary space complexity is O(V).
